@@ -308,8 +308,8 @@ function calculatePrice(e) {
         return;
     }
     
-    // Calculate base price (₱60 base + ₱10 per km)
-    let basePrice = 60 + (distance * 10);
+    // Calculate base price (₱70 base + ₱10 per km)
+    let basePrice = 70 + (distance * 10);
     let total = basePrice;
     
     // Add buyer service if enabled
