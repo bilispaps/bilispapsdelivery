@@ -311,8 +311,8 @@ function calculatePrice(e) {
     // Calculate base price (₱60 base + ₱10 per km)
     //let basePrice = 60 + (distance * 10;
   let basePrice = 60;
-    if (distance > 4) {
-    basePrice += (distance - 4) * 15;
+    if (distance > 3) {
+    basePrice += (distance - 3) * 15;
     }
 
   
