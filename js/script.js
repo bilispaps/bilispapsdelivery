@@ -78,7 +78,7 @@ function hideLoadingState() {
 function initMap() {
     try {
         // Initialize map with default view (Manila)
-        map = L.map('map').setView([14.5995, 120.9842], 13);
+        map = L.map('map').setView([15.3062, 120.8573], 13);
         
         // Add OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -308,8 +308,14 @@ function calculatePrice(e) {
         return;
     }
     
-    // Calculate base price (₱70 base + ₱10 per km)
-    let basePrice = 60 + (distance * 10);
+    // Calculate base price (₱60 base + ₱10 per km)
+    //let basePrice = 60 + (distance * 10;
+  let basePrice = 60;
+    if (distance > 4) {
+    basePrice += (distance - 4) * 10;
+    }
+
+  
     let total = basePrice;
     
     // Add buyer service if enabled
