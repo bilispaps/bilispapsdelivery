@@ -312,7 +312,7 @@ function calculatePrice(e) {
     //let basePrice = 60 + (distance * 10;
   let basePrice = 60;
     if (distance > 4) {
-    basePrice += (distance - 4) * 12;
+    basePrice += (distance - 4) * 15;
     }
 
   
