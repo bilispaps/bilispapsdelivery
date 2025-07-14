@@ -309,12 +309,12 @@ function calculatePrice(e) {
     }
     
     // Calculate base price (₱70 base + ₱10 per km)
-    let basePrice = 70 + (distance * 10);
+    let basePrice = 60 + (distance * 10);
     let total = basePrice;
     
     // Add buyer service if enabled
     if (hasBuyerService) {
-        const serviceFee = hours * 70;
+        const serviceFee = hours * 60;
         let extraWeightFee = 0;
         
         if (weight > 7) {
